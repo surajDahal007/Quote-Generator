@@ -27,10 +27,11 @@ var mainDiv = document.getElementById("main");
 mainDiv.textContent=`${category[index]}`;
 
 let isDark = false;
+var img = document.getElementById("img1");
+
 
 const theme = ()=>{
     isDark = !isDark;
-    var img = document.getElementById("img1");
     
     if(isDark){
         img.src="sun.jpg";
@@ -44,6 +45,7 @@ const theme = ()=>{
         img.src="halfmoon.jpg";
         document.body.style.color="black";
         document.body.style.background="rgb(184, 229, 247)";
+
         mainDiv.style.background="white";
     }
 }
