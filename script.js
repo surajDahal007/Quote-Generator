@@ -24,7 +24,6 @@ var category = science;
 
 var index=0;
 var mainDiv = document.getElementById("main");
-console.log(index);
 mainDiv.textContent=`${category[index]}`;
 
 let isDark = false;
@@ -37,11 +36,9 @@ const theme = ()=>{
         img.src="sun.jpg";
         document.body.style.color="white";
         document.body.style.background="#36393F";
-        // 
 
         mainDiv.style.background="#313232"
         mainDiv.style.border="2px solid white";
-
     }
     else{
         img.src="halfmoon.jpg";
@@ -72,7 +69,6 @@ const previous = ()=>{
         index =+ 3;
     }
     mainDiv.textContent=`${category[index]}`;
-    console.log(index);
 }
 
 const next = ()=>{
@@ -81,13 +77,11 @@ const next = ()=>{
         index = index%4;
     }
     mainDiv.textContent=`${category[index]}`;
-    console.log(index);
 }
 
 const random = ()=>{
     index = Math.floor(Math.random() * 4)
     mainDiv.textContent=`${category[index]}`;
-    console.log(index);
 }
 
 const handleInput = (a)=>{
