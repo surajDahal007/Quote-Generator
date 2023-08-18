@@ -71,9 +71,9 @@ a{
     padding:20px;
     justify-content: center;
     margin-top: 3%;
-    margin-left: 12%;
+    margin-left: 18%;
     margin-right: 5%;
-    width:70%;
+    width:60%;
 }
 
 
@@ -128,8 +128,4 @@ a{
     background-color: green;
 }
 
-.footer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8%;
-}
+
