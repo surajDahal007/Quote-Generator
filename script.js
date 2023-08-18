@@ -42,7 +42,7 @@ const theme = ()=>{
         mainDiv.style.border="2px solid white";
     }
     else{
-        img.src="halfmoon.jpg";
+        img.src="halfMoon.jpg";
         document.body.style.color="black";
         document.body.style.background="rgb(184, 229, 247)";
 
