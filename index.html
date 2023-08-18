@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="icon" type="image" href="favicon.jpg">
+</head>
+<body>
+    <div class="heading">
+        <h1>DEMO APP : <i>Quote Generator</i></h1>
+
+        <img id="img1"  
+            src="halfMoon.jpg" 
+            class="image"
+            onclick="theme()" 
+        />
+    </div>
+    <h5 class="theme-info">Theme Switch</h5>
+
+    <div class="dropdown">
+        <button class="dropbtn">CHOOSE CATEGORY</button>
+        <div class="dropdown-content">
+            <span onclick="handleScience()">Science</span> 
+            <span onclick="handlePhilosophy()">Philosophy</span>
+            <span onclick="handlePolitics()">Politics</span>
+        </div>
+    </div>
+
+    <form oninput="result.value = slider.value" class="size">
+        <label>Select Font Size</label><br/>
+        <input type="range" id="slider" 
+               min="10" max="30" step="2" value="16" onchange="handleInput(result.value)"> <br />
+        
+        The size is <output name="result" for="slider">16</output>
+      </form>
+
+    <div class="main" id="main"></div>
+    <div class="option">
+        <button class="options previous" onclick="previous()">Prev</button> 
+        &nbsp; 
+        <button class="options next" onclick="next()">Next</button>
+        &nbsp; 
+        <button class="options random" onclick="random()">Random</button>
+    </div>
+
+    <div class="footer">
+        <span>
+            Developed By : <a href="https://github.com/surajDahal007" target="_blank">Suraj Dahal</a>
+        </span>
+
+        <span>
+            Source Code : 
+                <a href="https://github.com/surajDahal007/Quote-Generator" target="_blank">
+                    <img src="github.jpeg" width="20" height="20" />
+                </a>
+        </span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(184, 229, 247);
+}
+
+a{
+    color:red;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.theme-info{
+    margin-left: 95.5%;
+    margin-top: -5px;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    /* background-color: #313232; */
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 40%;
+    margin-top: 1%;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 0px none none;
+    cursor: pointer;
+}
+  
+.dropdown-content span {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content span:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.main{
+    background-color: white;
+    border: 1px solid none;
+    border-radius: 10px;
+    box-shadow: 5px 10px rgb(106, 105, 104);
+    padding:20px;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 12%;
+    margin-right: 5%;
+    width:70%;
+}
+
+.main:hover{
+    padding: 25px;
+}
+
+.size{
+    margin-left: 40%;
+    margin-top: 3%;
+}
+
+.option{
+    margin-top: 3%;
+    margin-left: 40%;
+}
+
+.options{
+    font-size: large;
+    border-radius: 5px;
+    background-color: white;
+    padding:5px;
+}
+
+.options:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.previous{
+    font-style:normal;
+    border: 2px solid red;
+}
+
+.previous:hover{
+    background-color: red;
+}
+
+.next{
+    font-style: normal;
+    border: 2px solid blue ;
+
+}
+
+.next:hover{
+    background-color: blue;
+}
+
+.random{
+    font-style: italic;
+    border: 2px solid green;
+}
+
+.random:hover{
+    background-color: green;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+
